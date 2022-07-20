@@ -1,0 +1,25 @@
+.inputFile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputFile + label {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background-color: #3f51b5;
+  display: inline-block;
+}
+.inputFile:focus + label,
+.inputFile + label:hover {
+  filter: brightness(0.7);
+}
+.inputFile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputFile + label * {
+  pointer-events: none;  
+}

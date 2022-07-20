@@ -1,0 +1,31 @@
+# gitignore
+*.env*
+env-config.js
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# build
+build/
+
+# IDE
+.vscode
+.devcontainer
+
+# eslint
+.eslintcache
+
+# error ubuntu 20.4
+docker-compose.dev.custom.yml
+Dockerfile.custom
+docker-compose.production.yml

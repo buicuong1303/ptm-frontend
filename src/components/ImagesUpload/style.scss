@@ -1,0 +1,18 @@
+.imageItem {
+  width: 89px;
+  height: 89px;
+  position: relative;
+  list-style: none;
+  margin-right: 10px;
+}
+.iconDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  color: rgb(194, 18, 18);
+}
+.imageItem:hover .iconDelete {
+  display: block;
+} 

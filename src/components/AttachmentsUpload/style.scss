@@ -1,0 +1,22 @@
+
+.imageItem {
+  min-width: 89px;
+  height: 100px;
+  position: relative;
+  list-style: none;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  margin-bottom: 5px;
+}
+.iconDelete {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  display: none !important;
+  cursor: pointer;
+  color: #e53935;
+}
+.imageItem:hover .iconDelete {
+  display: block !important;
+} 

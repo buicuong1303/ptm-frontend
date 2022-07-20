@@ -1,0 +1,33 @@
+.spinner-4 {
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  padding:1px;
+  background:conic-gradient(#0000 10%,#1a237e) content-box;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+    radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 8px));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation:s4 1s infinite steps(10);
+}
+@keyframes s4 {to{transform: rotate(1turn)}}
+
+.dots-7 {
+  margin: 0 auto;
+  width:50px;
+  height:7px;
+  color:#1a237e;
+  background: 
+    radial-gradient(circle closest-side,currentColor 90%,#0000) 0%   50%,
+    radial-gradient(circle closest-side,currentColor 90%,#0000) 50%  50%,
+    radial-gradient(circle closest-side,currentColor 90%,#0000) 100% 50%;
+  background-size:calc(100%/3) 100%;
+  background-repeat: no-repeat;
+  animation:d7 1s infinite linear;
+}
+@keyframes d7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}

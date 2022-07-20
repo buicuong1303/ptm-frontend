@@ -1,0 +1,13 @@
+version: '3.7'
+services: 
+  php_text_message-frontend:
+    container_name: php_text_message-frontend
+    image: php_text_message-frontend
+    build: 
+      context: .
+      target: development
+    ports:
+      - 4100:4100
+    stdin_open: true
+    # tty: true
+    command: yarn run dev
